@@ -1,0 +1,28 @@
+{
+	"schemaVersion": 1,
+	"id": "create_trims",
+	"version": "${version}",
+	"name": "Create: Trims",
+	"description": "Trim your armor with Create's materials",
+	"authors": [
+		"Chai"
+	],
+	"contact": {
+		"homepage": "https://modrinth.com/mod/create_trims/",
+		"sources": "https://github.com/chailotl/create_trims",
+		"issues": "https://github.com/chailotl/create_trims/issues"
+	},
+	"custom": {
+		"modmenu": {
+			"links": {
+				"modmenu.discord": "https://discord.gg/SuZb3aJUCx"
+			}
+		}
+	},
+	"license": "LGPL-3.0",
+	"icon": "assets/create_trims/icon.png",
+	"environment": "*",
+	"depends": {
+		"create": "*"
+	}
+}

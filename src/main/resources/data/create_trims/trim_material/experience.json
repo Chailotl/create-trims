@@ -1,0 +1,9 @@
+{
+	"asset_name": "experience",
+	"description": {
+		"color": "#A0FF99",
+		"translate": "trim_material.create_trims.experience"
+	},
+	"ingredient": "create:experience_nugget",
+	"item_model_index": 0.005
+}

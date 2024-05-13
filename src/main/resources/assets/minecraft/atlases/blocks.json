@@ -1,0 +1,21 @@
+{
+	"sources": [
+		{
+			"type": "paletted_permutations",
+			"textures": [
+				"trims/items/leggings_trim",
+				"trims/items/chestplate_trim",
+				"trims/items/helmet_trim",
+				"trims/items/boots_trim"
+			],
+			"palette_key": "trims/color_palettes/trim_palette",
+			"permutations": {
+				"andesite_alloy": "create_trims:trims/color_palettes/andesite_alloy",
+				"zinc": "create_trims:trims/color_palettes/zinc",
+				"brass": "create_trims:trims/color_palettes/brass",
+				"rose_quartz": "create_trims:trims/color_palettes/rose_quartz",
+				"experience": "create_trims:trims/color_palettes/experience"
+			}
+		}
+	]
+}

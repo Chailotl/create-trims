@@ -1,0 +1,9 @@
+{
+	"asset_name": "zinc",
+	"description": {
+		"color": "#B1E9C0",
+		"translate": "trim_material.create_trims.zinc"
+	},
+	"ingredient": "create:zinc_ingot",
+	"item_model_index": 0.002
+}
