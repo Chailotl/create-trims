@@ -82,7 +82,6 @@ publishing {
 	}
 }
 
-/*
 publishMods {
 	file = remapJar.archiveFile
 	BufferedReader br = new BufferedReader(new InputStreamReader(System.in))
@@ -101,4 +100,4 @@ publishMods {
 		}
 		requires("create-fabric")
 	}
-}*/
+}
