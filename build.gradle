@@ -82,22 +82,25 @@ publishing {
 	}
 }
 
-publishMods {
-	file = remapJar.archiveFile
-	BufferedReader br = new BufferedReader(new InputStreamReader(System.in))
-	System.out.println("Enter changelog:")
-	changelog = br.readLine()
-	type = STABLE
-	displayName = "Create: Trims ${project.mod_version}"
-	modLoaders.add("fabric")
+if (project.gradle.startParameter.taskNames[0] == "publishMods") {
+	publishMods {
+		file = remapJar.archiveFile
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in))
+		System.out.println("Enter changelog:")
+		changelog = br.readLine()
+		type = STABLE
+		displayName = "Create: Trims ${project.mod_version}"
+		modLoaders.add("fabric")
+		dryRun = true
 
-	modrinth {
-		accessToken = providers.gradleProperty("modrinth_token").get()
-		projectId = "R2hcvYuY"
-		minecraftVersionRange {
-			start = "1.20.1"
-			end = "1.20.1"
+		modrinth {
+			accessToken = providers.gradleProperty("modrinth_token").get()
+			projectId = "R2hcvYuY"
+			minecraftVersionRange {
+				start = "1.20.1"
+				end = "1.20.1"
+			}
+			requires("create-fabric")
 		}
-		requires("create-fabric")
 	}
 }
